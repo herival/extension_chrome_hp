@@ -8,7 +8,7 @@
     if(nom){
 
         document.getElementById('log_ma').setAttribute('value', nom);
-        document.getElementById('log_codelog').setAttribute('value', 'Codelog');
+        document.getElementById('log_codelog').setAttribute('value', 'test');
         document.getElementById('log_serialnumber').setAttribute('value', 'NUMERO DE SERIE');
         document.getElementById('log_charge').setAttribute('value', 'CHARGE');
         document.getElementById('log_mac').setAttribute('value', 'CHARGE');
