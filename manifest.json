@@ -1,0 +1,26 @@
+{
+    "name" :"Remplir Configuration IPV4",
+    "author": "Heri VALISOA",
+    "manifest_version" : 2,
+    "version" :"1.0",
+    "description" :"Remplir les champs IPV4 page web imprimante HP", 
+    "background" : 
+    {
+        "scripts" : ["background.js"],
+        "persistent" : true
+    },
+    "permissions": [
+        "webNavigation",
+            "*://*/*"
+      ],
+    "optional_permissions": [
+        "webRequestBlocking"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["http://*/*"],
+          "js": ["content-script.js"]
+        }
+    ]
+    
+}
