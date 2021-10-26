@@ -1,5 +1,4 @@
 
-
     var str=document.location.href;
     var str1 = str.replace('%3D', '=');
     var url = new URL(str1);
@@ -7,13 +6,15 @@
 
     if(nom){
 
-        document.getElementById('log_ma').setAttribute('value', nom);
-        document.getElementById('log_codelog').setAttribute('value', 'test');
-        document.getElementById('log_serialnumber').setAttribute('value', 'NUMERO DE SERIE');
-        document.getElementById('log_charge').setAttribute('value', 'CHARGE');
-        document.getElementById('log_mac').setAttribute('value', 'CHARGE');
+        document.getElementById('IPv4_HostName').setAttribute('value', nom);
+        document.getElementById('IPv4_DomainName').setAttribute('value', 'cdn.groupe.credit-du-nord.fr');
+        document.getElementById('IPv4_DnsServerId').setAttribute('value', '161.20.7.66');
+        document.getElementById('IPv4_Sec_DnsServerId').setAttribute('value', '161.20.7.67');
         
-        document.getElementById('log_submit').click();
+        var bouton = document.getElementById('Apply').click();
+        var bouton = document.getElementById('Apply');
+        console.log(bouton);
+        bouton.click();
     }
     
 
